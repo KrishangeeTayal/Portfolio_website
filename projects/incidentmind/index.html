@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IncidentMind — Krishangee Tayal</title>
+<meta name="description" content="IncidentMind — an AI-powered incident response and postmortem platform built with Mastra, Qdrant and Enkrypt AI, with a human approving every action.">
+<meta name="author" content="Krishangee Tayal">
+<meta name="theme-color" content="#FFF9F2">
+<meta name="color-scheme" content="light">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Krishangee Tayal">
+<meta property="og:title" content="IncidentMind — Krishangee Tayal">
+<meta property="og:description" content="Multi-agent incident response that reconstructs the timeline, finds the root cause and writes the postmortem — with a human approving every action.">
+<meta property="og:image" content="../../assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="IncidentMind — Krishangee Tayal">
+<meta name="twitter:description" content="Multi-agent incident response that reconstructs the timeline, finds the root cause and writes the postmortem — with a human approving every action.">
+<meta name="twitter:image" content="../../assets/og.png">
+
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../assets/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="manifest" href="../../assets/site.webmanifest">
+<link rel="stylesheet" href="../../assets/css/site.css">
+<script src="../../assets/js/boot.js"></script>
+<script src="../../assets/js/site.js" defer></script>
+</head>
+<body class="case-body">
+<a class="skip-link" href="#case">Skip to content</a>
+
+<main class="case" id="case">
+  <div class="case__grid" aria-hidden="true"></div>
+  <span class="glow" style="left:-120px;top:120px;width:380px;height:380px;background:#EBD9FF" aria-hidden="true"></span>
+
+  <header class="case__bar">
+    <a class="case__back" href="../../index.html#work">&larr; Back to portfolio</a>
+    <a class="h-serif case__mark" href="../../index.html" aria-label="Krishangee Tayal — home">KT.</a>
+    <p class="case__eyebrow">Project 02 // AI / Incident Response</p>
+  </header>
+
+  <section class="case__hero">
+    <p class="case__idx" data-reveal>02</p>
+    <h1 class="h-serif case__title" data-reveal="mask" style="--rd:60ms">
+      <span class="rline"><span>IncidentMind</span></span>
+    </h1>
+    <p class="case__sub" data-reveal style="--rd:120ms">AI incident response &amp; postmortem platform</p>
+    <p class="body-t case__desc" data-reveal style="--rd:180ms">IncidentMind helps engineering teams investigate production incidents faster. It orchestrates multiple AI agents, retrieves similar historical incidents through semantic search, and validates AI-generated outputs &mdash; reducing the time spent on manual investigation while improving the reliability of incident reports.</p>
+    <p class="case__actions" data-reveal style="--rd:240ms">
+      <a class="btn-primary" href="https://incident-mind-web.vercel.app/dashboard" target="_blank" rel="noopener">Open live deployment &nbsp;&rarr;</a>
+      <a class="btn-ghost" href="https://github.com/KrishangeeTayal/IncidentMind" target="_blank" rel="noopener">View repository &nbsp;&rarr;</a>
+    </p>
+
+    <div class="case__facts">
+      <div class="case__fact" data-reveal>
+        <p class="case__fact-n" data-count="92" data-dec="0" data-suffix="%">92%</p>
+        <p class="case__fact-l">Human approval rate</p>
+      </div>
+      <div class="case__fact" data-reveal>
+        <p class="case__fact-n" data-count="540" data-dec="0" data-suffix="">540</p>
+        <p class="case__fact-l">Recommendations generated</p>
+      </div>
+      <div class="case__fact" data-reveal>
+        <p class="case__fact-n" data-count="96" data-dec="0" data-suffix="%">96%</p>
+        <p class="case__fact-l">Confidence on the shown incident</p>
+      </div>
+      <div class="case__fact" data-reveal>
+        <p class="case__fact-n" data-count="8" data-dec="0" data-suffix="">8</p>
+        <p class="case__fact-l">Capabilities shipped</p>
+      </div>
+    </div>
+  </section>
+
+  <figure class="case__shot shell" data-reveal>
+    <div class="chrome ">
+      <span class="chrome__dot"></span><span class="chrome__dot"></span><span class="chrome__dot"></span>
+      <span class="chrome__url">incident-mind-web.vercel.app/dashboard</span>
+      <span class="chrome__live">Live deployment</span>
+    </div>
+    <picture>
+      <source srcset="../../assets/img/im_mission.webp" type="image/webp">
+      <img src="../../assets/img/im_mission.png" width="1351" height="637" loading="eager" decoding="async" alt="IncidentMind Mission Control dashboard showing active incidents, pending approvals, average MTTR, incidents resolved and AI confidence.">
+    </picture>
+    <figcaption class="case__caption">Mission control &middot; real-time operations</figcaption>
+  </figure>
+
+  <div class="case__blocks">
+    <section class="case__block" data-reveal>
+      <h2 class="h-serif">The problem</h2>
+      <p>Managing technical incidents is often complex and time-consuming, as teams struggle to correlate events across multiple systems, reconstruct incident timelines, identify root causes, and prepare post-mortem reports. Manual investigation can lead to delays, missed connections, and incomplete analysis.</p>
+    </section>
+    <section class="case__block" data-reveal>
+      <h2 class="h-serif">What I built</h2>
+      <p>An AI-powered incident response and post-mortem automation platform &mdash; Mastra for agent orchestration, Qdrant for vector-based knowledge retrieval, Enkrypt AI for secure AI interactions. Specialised agents analyse incident data, reconstruct timelines, identify probable root causes, assign confidence scores and generate structured post-mortems, with a 92% human approval rate across 540 generated recommendations.</p>
+    </section>
+    <section class="case__block" data-reveal>
+      <h2 class="h-serif">What the platform does</h2>
+      <ul>
+        <li>Multi-agent incident investigation.</li>
+        <li>Automatic incident timeline generation.</li>
+        <li>AI-powered root cause analysis.</li>
+        <li>Semantic retrieval using Qdrant.</li>
+        <li>AI output validation with Enkrypt AI.</li>
+        <li>Automated postmortem generation.</li>
+        <li>Stakeholder communication summaries.</li>
+        <li>Confidence scoring for generated insights.</li>
+      </ul>
+    </section>
+    <section class="case__block" data-reveal>
+      <h2 class="h-serif">The human stays in the loop</h2>
+      <ul>
+        <li>Every recommendation carries its own confidence score and its own approve / reject controls.</li>
+        <li>92% of the 540 generated recommendations were approved by a human &mdash; the other 8% were rejected rather than applied silently.</li>
+        <li>Incident detail arrives with the full investigation timeline attached, not just a verdict.</li>
+        <li>Runbooks are distilled from every incident, so the next one starts from what the last one taught.</li>
+      </ul>
+    </section>
+  </div>
+
+  <section class="case__wide">
+    <div class="case__callout" data-reveal>
+      <h2 class="h-serif" style="font-size:clamp(21px,1.8vw,28px)">What incidents used to cost</h2>
+      <p>Production incidents often require engineers to manually analyse logs and incident reports, build timelines from scattered information, perform root cause analysis, search previous incidents, draft stakeholder updates and write postmortems.</p>
+      <p>These repetitive tasks slow down recovery and increase operational overhead. IncidentMind automates that workflow instead of asking an engineer to do it twice.</p>
+    </div>
+  </section>
+
+  <section class="case__wide">
+    <h2 class="h-serif" data-reveal>More from the build</h2>
+    <div class="case__more">
+      <figure data-reveal>
+        <picture>
+          <source srcset="../../assets/img/im_incident.webp" type="image/webp">
+          <img src="../../assets/img/im_incident.png" width="1343" height="623" loading="lazy" decoding="async" alt="IncidentMind incident detail showing an AI recommendation at 96% confidence with approve and reject controls, above a seven-step investigation timeline.">
+        </picture>
+        <figcaption class="case__caption">AI recommendation &middot; 96% confidence, human approved</figcaption>
+      </figure>
+      <figure data-reveal>
+        <picture>
+          <source srcset="../../assets/img/im_runbooks.webp" type="image/webp">
+          <img src="../../assets/img/im_runbooks.png" width="1115" height="510" loading="lazy" decoding="async" alt="IncidentMind AI-generated runbooks listing triggers and numbered resolution steps distilled from past incidents.">
+        </picture>
+        <figcaption class="case__caption">AI generated runbooks &middot; distilled from every incident</figcaption>
+      </figure>
+    </div>
+    <ul class="chips" style="margin-top:34px" data-reveal>
+      <li class="chip">TypeScript</li>
+      <li class="chip">Mastra</li>
+      <li class="chip">Qdrant</li>
+      <li class="chip">Enkrypt AI</li>
+      <li class="chip">Node.js</li>
+      <li class="chip">pnpm</li>
+    </ul>
+  </section>
+
+  <nav class="case__nav" aria-label="Projects">
+    <a class="case__navlink" href="../swasthyasetu-ai/">
+      <span class="case__navlabel">&larr; Previous project</span>
+      <span class="case__navtitle">SwasthyaSetu AI</span>
+    </a>
+    <a class="case__navlink case__navlink--next" href="../energize/">
+      <span class="case__navlabel">Next project &rarr;</span>
+      <span class="case__navtitle">ENERGIZE</span>
+    </a>
+  </nav>
+</main>
+
+</body>
+</html>

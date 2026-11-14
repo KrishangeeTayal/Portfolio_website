@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ENERGIZE — Krishangee Tayal</title>
+<meta name="description" content="ENERGIZE — an intelligent digital twin for household energy conservation, forecasting 72 hours ahead over 2.07 million minute-level readings.">
+<meta name="author" content="Krishangee Tayal">
+<meta name="theme-color" content="#FFF9F2">
+<meta name="color-scheme" content="light">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Krishangee Tayal">
+<meta property="og:title" content="ENERGIZE — Krishangee Tayal">
+<meta property="og:description" content="A digital twin of a household’s electricity use — measure it, find the waste, and model what changing it would actually save.">
+<meta property="og:image" content="../../assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ENERGIZE — Krishangee Tayal">
+<meta name="twitter:description" content="A digital twin of a household’s electricity use — measure it, find the waste, and model what changing it would actually save.">
+<meta name="twitter:image" content="../../assets/og.png">
+
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../assets/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="manifest" href="../../assets/site.webmanifest">
+<link rel="stylesheet" href="../../assets/css/site.css">
+<script src="../../assets/js/boot.js"></script>
+<script src="../../assets/js/site.js" defer></script>
+</head>
+<body class="case-body">
+<a class="skip-link" href="#case">Skip to content</a>
+
+<main class="case" id="case">
+  <div class="case__grid" aria-hidden="true"></div>
+  <span class="glow" style="left:-120px;top:120px;width:380px;height:380px;background:#EBD9FF" aria-hidden="true"></span>
+
+  <header class="case__bar">
+    <a class="case__back" href="../../index.html#work">&larr; Back to portfolio</a>
+    <a class="h-serif case__mark" href="../../index.html" aria-label="Krishangee Tayal — home">KT.</a>
+    <p class="case__eyebrow">Project 03 // ML / Energy</p>
+  </header>
+
+  <section class="case__hero">
+    <p class="case__idx" data-reveal>03</p>
+    <h1 class="h-serif case__title" data-reveal="mask" style="--rd:60ms">
+      <span class="rline"><span>ENERGIZE</span></span>
+    </h1>
+    <p class="case__sub" data-reveal style="--rd:120ms">Intelligent digital twin for energy conservation</p>
+    <p class="body-t case__desc" data-reveal style="--rd:180ms">ENERGIZE is an intelligent digital twin for energy conservation, combining energy forecasting, consumption analysis, anomaly investigation and optimisation over the UCI Household Power Consumption dataset. A React and TypeScript frontend sits on a FastAPI backend that serves two trained regression models.</p>
+    <p class="case__actions" data-reveal style="--rd:240ms">
+      <a class="btn-primary" href="https://energize-nine.vercel.app" target="_blank" rel="noopener">Open live deployment &nbsp;&rarr;</a>
+      <a class="btn-ghost" href="https://github.com/krishangeetayal/ENERGIZE" target="_blank" rel="noopener">View repository &nbsp;&rarr;</a>
+    </p>
+
+    <div class="case__facts">
+      <div class="case__fact" data-reveal>
+        <p class="case__fact-n" data-count="2.07" data-dec="2" data-suffix="M">2.07M</p>
+        <p class="case__fact-l">Minute-level readings</p>
+      </div>
+      <div class="case__fact" data-reveal>
+        <p class="case__fact-n">34,151</p>
+        <p class="case__fact-l">Hourly rows prepared</p>
+      </div>
+      <div class="case__fact" data-reveal>
+        <p class="case__fact-n" data-count="72" data-dec="0" data-suffix="h">72h</p>
+        <p class="case__fact-l">Forecast horizon</p>
+      </div>
+      <div class="case__fact" data-reveal>
+        <p class="case__fact-n" data-count="2" data-dec="0" data-suffix="">2</p>
+        <p class="case__fact-l">Trained regressors</p>
+      </div>
+    </div>
+  </section>
+
+  <figure class="case__shot shell" data-reveal>
+    <div class="chrome ">
+      <span class="chrome__dot"></span><span class="chrome__dot"></span><span class="chrome__dot"></span>
+      <span class="chrome__url">energize-nine.vercel.app</span>
+      <span class="chrome__live">Live deployment</span>
+    </div>
+    <picture>
+      <source srcset="../../assets/img/ez_twin.webp" type="image/webp">
+      <img src="../../assets/img/ez_twin.png" width="1290" height="900" loading="eager" decoding="async" alt="ENERGIZE digital twin heatmap showing average household electricity consumption for every hour of every weekday.">
+    </picture>
+    <figcaption class="case__caption">Digital twin &middot; the shape of every weekday</figcaption>
+  </figure>
+
+  <div class="case__blocks">
+    <section class="case__block" data-reveal>
+      <h2 class="h-serif">The problem</h2>
+      <p>Most households have thousands of consumption readings and no way to read them. The wasteful hours stay invisible, near-term demand is unknown, and nobody can say what changing a habit would actually save.</p>
+    </section>
+    <section class="case__block" data-reveal>
+      <h2 class="h-serif">What I built</h2>
+      <p>A six-workspace digital twin over the UCI Household Power Consumption dataset &mdash; 34,151 hourly readings distilled from 2.07 million minute-level records. Random Forest and XGBoost forecast up to 72 hours ahead, a waste investigator scores every hour against the household&rsquo;s own baseline, a digital-twin heatmap maps the shape of every weekday, and an optimisation lab tests hypothetical reductions.</p>
+    </section>
+    <section class="case__block" data-reveal>
+      <h2 class="h-serif">Six workspaces</h2>
+      <ul>
+        <li><strong>Overview</strong> &mdash; headline consumption, a real historical chart and the signals worth acting on.</li>
+        <li><strong>Energy Prediction</strong> &mdash; single-step prediction with the lag inputs pre-filled from the household's own record, plus a recursive 24/48/72-hour forecast.</li>
+        <li><strong>Waste Investigator</strong> &mdash; hourly consumption scored against the household's baseline for that same hour of day, ranked by departure.</li>
+        <li><strong>Digital Twin</strong> &mdash; the observed shape of the household as a day &times; hour heatmap, with the forecast layered over it.</li>
+        <li><strong>Optimization Lab</strong> &mdash; reduction scenarios computed on the server, with the recommended scenario and its feasibility limits.</li>
+        <li><strong>Model Lab</strong> &mdash; verified error metrics, the evaluation window they were measured in, and the feature importances read from the trained artifacts.</li>
+      </ul>
+    </section>
+    <section class="case__block" data-reveal>
+      <h2 class="h-serif">The models</h2>
+      <ul>
+        <li>Random Forest regressor &mdash; 100 trees, depth 15, trained and saved as a joblib artifact.</li>
+        <li>XGBoost regressor &mdash; 300 estimators, depth 6, learning rate 0.05.</li>
+        <li>Both models use the same six features: hour, day of week, month, and the previous 1, 24 and 168 hourly readings.</li>
+        <li>Nine FastAPI endpoints serve the frontend &mdash; overview, history, model comparison, profile, anomalies, predict, forecast, optimise and health.</li>
+      </ul>
+    </section>
+  </div>
+
+  <section class="case__wide">
+    <div class="case__callout" data-reveal>
+      <h2 class="h-serif" style="font-size:clamp(21px,1.8vw,28px)">A note on honesty in the numbers</h2>
+      <p>The interface deliberately separates four kinds of number, and labels them as such: <strong>Measured</strong> &mdash; actual readings from the prepared dataset. <strong>Forecast</strong> &mdash; model output, drawn as a dashed amber line. <strong>Detected anomaly</strong> &mdash; a reading that deviates from the household's own baseline for that hour of day. <strong>Simulated</strong> &mdash; a hypothetical reduction applied to a forecast.</p>
+      <p>Two limitations are worth understanding before you present this. Anomalies are not proof of waste &mdash; a household simply being awake at 03:00 looks anomalous, and the interface says so on the page. And the prepared dataset carries total household consumption only, so no reading can be attributed to a specific appliance.</p>
+      <p>The optimisation scenarios are a transparent decision heuristic &mdash; 0.7 weight on estimated savings, 0.3 on conservativeness &mdash; not a learned optimisation model. Savings are hypothetical and are not guaranteed.</p>
+    </div>
+  </section>
+
+  <section class="case__wide">
+    <h2 class="h-serif" data-reveal>More from the build</h2>
+    <div class="case__more">
+      <figure data-reveal>
+        <picture>
+          <source srcset="../../assets/img/ez_waste.webp" type="image/webp">
+          <img src="../../assets/img/ez_waste.png" width="1290" height="900" loading="lazy" decoding="async" alt="ENERGIZE waste investigator flagging 39 hourly readings above the household's expected baseline.">
+        </picture>
+        <figcaption class="case__caption">Waste investigator &middot; 39 flagged hours</figcaption>
+      </figure>
+      <figure data-reveal>
+        <picture>
+          <source srcset="../../assets/img/ez_model.webp" type="image/webp">
+          <img src="../../assets/img/ez_model.png" width="1290" height="900" loading="lazy" decoding="async" alt="ENERGIZE model lab comparing the baseline, Random Forest and XGBoost on test-set error metrics.">
+        </picture>
+        <figcaption class="case__caption">Model lab &middot; Random Forest vs XGBoost</figcaption>
+      </figure>
+    </div>
+    <ul class="chips" style="margin-top:34px" data-reveal>
+      <li class="chip">React 19</li>
+      <li class="chip">TypeScript</li>
+      <li class="chip">Vite 8</li>
+      <li class="chip">FastAPI</li>
+      <li class="chip">XGBoost</li>
+      <li class="chip">scikit-learn</li>
+      <li class="chip">Recharts</li>
+    </ul>
+  </section>
+
+  <nav class="case__nav" aria-label="Projects">
+    <a class="case__navlink" href="../incidentmind/">
+      <span class="case__navlabel">&larr; Previous project</span>
+      <span class="case__navtitle">IncidentMind</span>
+    </a>
+    <a class="case__navlink case__navlink--next" href="../scopeshield/">
+      <span class="case__navlabel">Next project &rarr;</span>
+      <span class="case__navtitle">ScopeShield</span>
+    </a>
+  </nav>
+</main>
+
+</body>
+</html>

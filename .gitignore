@@ -1,0 +1,10 @@
+# Nothing to build — but keep editor/OS noise out.
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+node_modules/
+.vercel
+.netlify
